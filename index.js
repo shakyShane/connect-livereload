@@ -52,7 +52,7 @@ module.exports = function livereload(opt) {
 
   function snip(body) {
     if (!body) return false;
-    return (~body.lastIndexOf("/livereload.js"));
+    return (~body.lastIndexOf(src));
   }
 
   function snap(body) {
